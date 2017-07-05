@@ -119,6 +119,33 @@
                 </source>
               </sources>
             </mapping>
+
+            <mapping>
+              <directory>/usr/bin</directory>
+              <sources>
+                <source>
+                  <location>${project.build.directory}/${project.artifactId}-${project.version}-dist/usr/bin</location>
+                </source>
+              </sources>
+            </mapping>
+
+            <mapping>
+              <directory>/usr/lib/mwbd-server</directory>
+              <sources>
+                <source>
+                  <location>${project.build.directory}/${project.artifactId}-${project.version}-dist/usr/lib/mwbd-server</location>
+                </source>
+              </sources>
+            </mapping>
+
+            <mapping>
+              <directory>/var/test</directory>
+              <sources>
+                <source>
+                  <location>${project.build.directory}/${project.artifactId}-${project.version}-dist/var/test</location>
+                </source>
+              </sources>
+            </mapping>
           </mappings>
 
 
