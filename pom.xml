@@ -91,66 +91,66 @@
         </executions>
       </plugin>
 
-      <!--<plugin>-->
-        <!--<groupId>org.codehaus.mojo</groupId>-->
-        <!--<artifactId>rpm-maven-plugin</artifactId>-->
-        <!--<version>2.1.4</version>-->
-        <!--<executions>-->
-          <!--<execution>-->
-            <!--<id>attach-rpm</id>-->
-            <!--<phase>package</phase>-->
-            <!--<goals>-->
-              <!--<goal>rpm</goal>-->
-            <!--</goals>-->
-          <!--</execution>-->
-        <!--</executions>-->
-        <!--<configuration>-->
-          <!--<copyright>2012, Apache Software Foundation</copyright>-->
-          <!--<group>ManWei</group>-->
-          <!--<description>ManWei BigData Platform: RPM Package.</description>-->
-          <!--<mappings>-->
-            <!--<mapping>-->
-              <!--<directory>/etc</directory>-->
-              <!--<username>root</username>-->
-              <!--<groupname>root</groupname>-->
-              <!--<sources>-->
-                <!--<source>-->
-                  <!--<location>src/main/resources</location>-->
-                <!--</source>-->
-              <!--</sources>-->
-            <!--</mapping>-->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>rpm-maven-plugin</artifactId>
+        <version>2.1.4</version>
+        <executions>
+          <execution>
+            <id>attach-rpm</id>
+            <phase>none</phase>
+            <goals>
+              <goal>rpm</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <copyright>2012, Apache Software Foundation</copyright>
+          <group>ManWei</group>
+          <description>ManWei BigData Platform: RPM Package.</description>
+          <mappings>
+            <mapping>
+              <directory>/etc</directory>
+              <username>root</username>
+              <groupname>root</groupname>
+              <sources>
+                <source>
+                  <location>src/main/resources</location>
+                </source>
+              </sources>
+            </mapping>
 
-            <!--<mapping>-->
-              <!--<directory>/usr/bin</directory>-->
-              <!--<sources>-->
-                <!--<source>-->
-                  <!--<location>${project.build.directory}/${project.artifactId}-${project.version}-dist/usr/bin</location>-->
-                <!--</source>-->
-              <!--</sources>-->
-            <!--</mapping>-->
+            <mapping>
+              <directory>/usr/bin</directory>
+              <sources>
+                <source>
+                  <location>${project.build.directory}/${project.artifactId}-${project.version}-dist/usr/bin</location>
+                </source>
+              </sources>
+            </mapping>
 
-            <!--<mapping>-->
-              <!--<directory>/usr/lib/mwbd-server</directory>-->
-              <!--<sources>-->
-                <!--<source>-->
-                  <!--<location>${project.build.directory}/${project.artifactId}-${project.version}-dist/usr/lib/mwbd-server</location>-->
-                <!--</source>-->
-              <!--</sources>-->
-            <!--</mapping>-->
+            <mapping>
+              <directory>/usr/lib/mwbd-server</directory>
+              <sources>
+                <source>
+                  <location>${project.build.directory}/${project.artifactId}-${project.version}-dist/usr/lib/mwbd-server</location>
+                </source>
+              </sources>
+            </mapping>
 
-            <!--<mapping>-->
-              <!--<directory>/var/test</directory>-->
-              <!--<sources>-->
-                <!--<source>-->
-                  <!--<location>${project.build.directory}/${project.artifactId}-${project.version}-dist/var/test</location>-->
-                <!--</source>-->
-              <!--</sources>-->
-            <!--</mapping>-->
-          <!--</mappings>-->
+            <mapping>
+              <directory>/var/test</directory>
+              <sources>
+                <source>
+                  <location>${project.build.directory}/${project.artifactId}-${project.version}-dist/var/test</location>
+                </source>
+              </sources>
+            </mapping>
+          </mappings>
 
 
-        <!--</configuration>-->
-      <!--</plugin>-->
+        </configuration>
+      </plugin>
 
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
