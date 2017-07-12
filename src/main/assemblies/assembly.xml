@@ -16,6 +16,10 @@
                 <exclude>hello.txt</exclude>
             </excludes>
         </fileSet>
+        <fileSet>
+            <directory>src/main/resources</directory>
+            <outputDirectory>usr/bin</outputDirectory>
+        </fileSet>
     </fileSets>
 
     <files>
